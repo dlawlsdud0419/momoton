@@ -34,8 +34,8 @@ body {
   background-size: cover;
   background-position: center center;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation: fadeIn 3s ease-in-out forwards;
+  animation-delay: 1s;
   color : white;
   display: flex;
   align-items: center;
