@@ -8,7 +8,7 @@ function paintName(name) {
     title.innerHTML = `Good afternoon, ${name}.`;
   } else if(nowhours >= 18 && nowhours < 23){
     title.innerHTML = `Good evening, ${name}.`;
-  } else if(nowhours >= 23){
+  } else if(nowhours >= 23 || (nowhours >=0 && nowhours <=6 )){
     title.innerHTML = `Good night, ${name}.`;
   }
   else {
