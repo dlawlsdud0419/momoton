@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Momontum</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/checkbox.css">
 </head>
-
 <body>
     <section class="center">
+        <div id="inputWrapper">
+            <form class="search-form" method="GET" action="/" onSubmit="return false">
+            <div class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <div><input id="Search" class="search" type="search" autocomplete="off" spellcheck="false"
+                    aria-live="polite" placeholder="Google 검색 또는 URL 입력" maxlength="255"></div>
+            </form>
+        </div>
         <div class="js-clock clock">
             <h3 class="clock__text">00:00:00</h3>
         </div>
         <div class="js-name name"></div>
         <div>
             <form class="js-to-do to-do">
-                <input class="js-add-to-do to-do__add-to-do" placeholder="Write a To Do here" type="text" />
+                <h3 class="toDo">What is your main focus for today?</h3>
+                <input id="input" class="js-add-to-do to-do__add-to-do" placeholder="" type="text" />
             </form>
             <ul class="js-list list"></ul>
         </div>
     </section>
-
     <div class="js-location location">
         <span class="location__text"></span>
     </div>
 
     <div class="js-weather weather">
+        <img id="weather-icon" />
         <span class="weather__text"></span>
     </div>
 
@@ -34,5 +44,6 @@
     <script src="js/toDo.js"></script>
     <script src="js/bg.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

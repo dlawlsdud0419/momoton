@@ -1,8 +1,35 @@
 .weather {
     position: absolute;
     font-style: italic;
-    font-size: 12px;
+    font-size: 1vw;
     position: absolute;
     top: 25px;
     right: 25px;
+    color: #000000;
   }
+
+  #weather-icon{
+    width: 3vw;
+    height: 3vw;
+    vertical-align: middle;
+  }
+
+@media screen and (max-width:1028px){
+  .weather{
+    font-size: 1.5vw;
+  }
+  #weather-icon{
+    width: 6vw;
+    height: 6vw;
+  }
+}
+
+@media screen and (max-width:768px){
+  .weather{
+    font-size: 3vw;
+  }
+  #weather-icon{
+    width: 9vw;
+    height: 9vw;
+  }
+}

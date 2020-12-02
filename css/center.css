@@ -5,6 +5,7 @@
 }
 
 .center .name__input {
+  width: 100%;
   appearance: none;
   background: none;
   border: none;
@@ -24,10 +25,19 @@
 }
 
 .center .name__text {
-  font-size: 36px;
+  font-size: 3vw;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .center .name {
   margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .center .name__text{
+    font-size: 6vw;
+  }
 }

@@ -2,6 +2,7 @@ const API_KEY = "83871061b722f33c2cb82ebbd23c0904";
 const WEATHER_API = "https://api.openweathermap.org/data/2.5/weather?";
 
 const weather = document.querySelector(".js-weather .weather__text");
+const icon = document.getElementById('weather-icon');
 
 
 function getWeather(coords) {
@@ -14,6 +15,7 @@ function getWeather(coords) {
       .then(json => {
         const name = json.name;
         const temperature = json.main.temp;
+        icon.src = 'http://openweathermap.org/img/wn/'+json.weather[0].icon+'@2x.png';
         weather.innerHTML = `${Math.floor(temperature)}° @ ${name}`;
       });
   }
@@ -48,7 +50,6 @@ function loadWeather() {
   }
 
 function init(){
-    
     loadWeather();
 }
 

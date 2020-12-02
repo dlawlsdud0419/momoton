@@ -3,10 +3,49 @@
   }
   
   .toDo {
-    font-size: 22px;
+    font-size: 2vw;
   }
   
   .toDo__button {
-    margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
+    position: absolute;
+    font-size: 1.5vw;
+  }
+
+  .toDo__button:active{
+    transform: scale(0.9);
+  }
+
+  .active{
+    text-decoration:line-through;
+  }
+
+  #completeplan{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2vw;
+    opacity: 0;
+    height: 2vw;
+  }
+  .text-colse {
+    animation : close 1s linear;
+  }
+  @keyframes close {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px){
+    .toDo {
+      font-size: 5vw;
+    }
+    .toDo__button{
+      font-size: 4vw;
+    }
   }

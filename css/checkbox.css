@@ -1,0 +1,15 @@
+input[id="checked"]{
+  margin-top: -1%;
+  vertical-align: middle;
+  margin-right: 10px;
+  -ms-transform: scale(1.1); /* IE */
+  -moz-transform: scale(1.1); /* FF */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -o-transform: scale(1.1); /* Opera */
+  transform: scale(1.1);
+  
+}
+
+input[id="checked"]:checked + label {
+	text-decoration: line-through;
+}

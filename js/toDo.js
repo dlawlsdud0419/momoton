@@ -1,7 +1,7 @@
 const form = document.querySelector(".js-to-do"),
   input = document.querySelector(".js-add-to-do"),
   list = document.querySelector(".js-list");
-
+  
 let toDos = [];
 
 function persistToDos() {
@@ -32,6 +32,9 @@ function handleDelete(event) {
 
 function addToDo(text) {
   const toDo = document.createElement("li");
+  const check = document.createElement("input");
+  check.type ="checkbox";
+  check.id= "checked";
   toDo.className = "toDo";
   toDo.id = toDos.length + 1;
   const deleteBtn = document.createElement("span");
@@ -40,8 +43,9 @@ function addToDo(text) {
   deleteBtn.addEventListener("click", handleDelete);
   const label = document.createElement("label");
   label.innerHTML = text;
-  toDo.appendChild(deleteBtn);
+  toDo.appendChild(check);
   toDo.appendChild(label);
+  toDo.appendChild(deleteBtn);
   list.appendChild(toDo);
   saveToDo(text);
 }

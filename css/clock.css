@@ -1,3 +1,16 @@
 .clock {
-    font-size: 10em;
+    font-size: 8vw;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px){
+    .clock {
+      font-size: 15vw;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .clock {
+      font-size: 18vw;
+    }
   }

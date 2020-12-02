@@ -1,0 +1,17 @@
+{
+  "name": "Momontum",
+  "version": "1.0",
+  "description": "Weather and Diary",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"  
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}

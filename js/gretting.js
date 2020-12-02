@@ -4,7 +4,17 @@ function paintName(name) {
   nameContainer.innerHTML = "";
   const title = document.createElement("span");
   title.className = "name__text";
-  title.innerHTML = `Hello ${name}`;
+  if(nowhours >= 12 && nowhours < 18){
+    title.innerHTML = `Good afternoon, ${name}.`;
+  } else if(nowhours >= 18 && nowhours < 23){
+    title.innerHTML = `Good evening, ${name}.`;
+  } else if(nowhours >= 23){
+    title.innerHTML = `Good night, ${name}.`;
+  }
+  else {
+    title.innerHTML = `Good morning, ${name}.`;
+  }
+  
   nameContainer.appendChild(title);
 }
 
@@ -18,8 +28,10 @@ function handleSubmit(event) {
 }
 
 function paintInput() {
+  const div = document.createElement("div");
   const input = document.createElement("input");
-  input.placeholder = "Type your name here";
+  input.placeholder = "Hello, what's your name?";
+  input.style.textAlign ="center";
   input.type = "text";
   input.className = "name__input";
   const form = document.createElement("form");

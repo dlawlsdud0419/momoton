@@ -5,7 +5,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 html {
@@ -42,21 +42,24 @@ body {
   justify-content: center;
 }
 
-input {
+#input {
+  margin-top: 20px;
   background: none;
   appearance: none;
   border: 0;
-  font-size: 22px;
+  font-size: 2vw;
   color:  white;
   border-bottom: 2px solid  white;
+  width: 100%;
+  text-align: center;
 }
 
-input::placeholder {
+#input::placeholder {
   color:  white;
 }
 
-input:focus,
-input:active {
+#input:focus,
+#input:active {
   outline: none;
 }
 
@@ -67,5 +70,11 @@ ul {
 }
 
 ul {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width : 768px){
+  #input{
+    font-size: 4vw;
+  }
 }
