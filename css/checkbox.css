@@ -1,4 +1,4 @@
-input[id="checked"]{
+input[class="checked"]{
   margin-top: -1%;
   vertical-align: middle;
   margin-right: 10px;
@@ -10,6 +10,6 @@ input[id="checked"]{
   
 }
 
-input[id="checked"]:checked + label {
+input[class="checked"]:checked + label {
 	text-decoration: line-through;
 }
